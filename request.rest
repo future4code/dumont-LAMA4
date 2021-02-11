@@ -1,9 +1,26 @@
+### createUser
+
 POST http://localhost:3003/user/signup
 Content-Type: application/json
 
 {
-    "name": "fulano",
-    "email": "fulano@email.com.br",
+    "name": "teste",
+    "email": "teste@email.com.br",
     "password": "123456",
     "role": "NORMAL"
 }
+
+
+### login
+
+POST http://localhost:3003/user/login
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQ4ZDJmMjM1LTE0NTgtNGIwMC1hMzBkLWRlNWZkMDRjZTkyNCIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2MTMwNzIyMDEsImV4cCI6MTYxMzE1ODYwMX0.g7exyA_P5ZNui-C5nS9oWtPXxYJ8CJfOTm2hHmZ3mfY
+
+{
+    "email": "fulano@email.com.br",
+    "password": "123456"
+    
+}
+
+
