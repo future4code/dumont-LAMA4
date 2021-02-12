@@ -16,4 +16,5 @@ export class BaseDatabase {
          database: process.env.DB_NAME,
       },
    });
+    static getShowById: any;
 }
