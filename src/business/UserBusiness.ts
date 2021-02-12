@@ -1,9 +1,9 @@
-import { UserInputDTO, LoginInputDTO } from "./entities/User";
-import { UserDatabase } from "../data/UserDatabase";
-import { IdGenerator } from "./services/IdGenerator";
-import { HashManager } from "./services/HashManager";
-import { Authenticator } from "./services/Authenticator";
-import { CustomError } from "./error/CustomError";
+import { UserInputDTO, LoginInputDTO } from "./entities/User"
+import { UserDatabase } from "../data/UserDatabase"
+import { IdGenerator } from "./services/IdGenerator"
+import { HashManager } from "./services/HashManager"
+import { Authenticator } from "./services/Authenticator"
+import { CustomError } from "./error/CustomError"
 
 export class UserBusiness {
 

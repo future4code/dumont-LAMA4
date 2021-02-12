@@ -4,10 +4,10 @@ POST http://localhost:3003/user/signup
 Content-Type: application/json
 
 {
-    "name": "teste",
-    "email": "teste@email.com.br",
+    "name": "Luciana",
+    "email": "luciana@email.com.br",
     "password": "123456",
-    "role": "NORMAL"
+    "role": "ADMIN"
 }
 
 
@@ -18,9 +18,34 @@ Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQ4ZDJmMjM1LTE0NTgtNGIwMC1hMzBkLWRlNWZkMDRjZTkyNCIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2MTMwNzIyMDEsImV4cCI6MTYxMzE1ODYwMX0.g7exyA_P5ZNui-C5nS9oWtPXxYJ8CJfOTm2hHmZ3mfY
 
 {
-    "email": "fulano@email.com.br",
-    "password": "123456"
-    
+    "email": "luciana@email.com.br",
+    "password": "123456"  
 }
 
 
+### createBand
+
+POST http://localhost:3003/bands/create
+Content-Type: application/json
+
+{
+    "name": "Banda teste",
+    "music_genre": "Rock",
+    "responsible": "Astro do Rock"
+}
+
+### getBandById
+GET http://localhost:3003/bands/eec84eb2-0a79-48cc-9382-ec08614f9f5e
+
+
+### createShow
+
+POST http://localhost:3003/shows/create
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZiOTA5ZDgwLTQzNDktNDJkNy1iZjMwLWYxYWE0Yjc2NzdhZCIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTYxMzE1Njg0NiwiZXhwIjoxNjEzMjQzMjQ2fQ.txDRp31X8MozGRRD2AyYXaK8XKbBHTrUtGRetuytJc8
+
+{
+    "week_day": "SATURDAY",
+    "start_time": 14,
+    "end_time": 22
+}
